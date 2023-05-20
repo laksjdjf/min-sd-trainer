@@ -1,0 +1,14 @@
+model: "waifu-diffusion/wd-1-5-beta2"
+v_prediction: true
+dataset: "../test_dataset"
+output: "test"
+image_log: "image_log"
+resolution: "768,768"
+amp: "bfloat16"
+gradient_checkpointing: false
+optimizer: bitsandbytes.optim.AdamW8bit
+batch_size: 4
+lr: 5e-6
+epochs: 20
+save_n_epochs: 5
+use_xformers: true
