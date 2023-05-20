@@ -1,0 +1,6 @@
+#勘で設定する。
+diffusers>=0.16.1
+accelerate
+transformers-=4.28.1
+omegaconf
+safetensors
